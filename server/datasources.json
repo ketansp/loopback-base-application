@@ -1,6 +1,17 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
+  "mysqlTransactional": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "loopback_base_application",
+    "username": "root",
+    "password": "root",
+    "name": "mysqlTransactional",
+    "connector": "mysql",
+    "connectionLimit" : 10,
+    "debug": false
+  },
+  "memory" : {
+    "name" : "memory",
+    "connector" : "memory"
   }
 }

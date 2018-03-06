@@ -10,6 +10,7 @@
 *.swp
 *.tgz
 *.xml
+*.lock
 .DS_Store
 .idea
 .project
@@ -17,3 +18,11 @@
 coverage
 node_modules
 npm-debug.log
+client/dist
+client/.tmp
+client/.sass-cache
+client/bower_components
+client/app/modules/services.loopback.js
+.vscode
+.tmp
+ref
