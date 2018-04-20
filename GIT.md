@@ -13,6 +13,7 @@
 - Never force push master branch.
 - Do not merge your branch in master locally. Always create a pull request.
 - Create different branches for different features. This will help in reducing features inter-dependnce at the time of deployment.
+- Never force-push a branch to server
 
 
 ###Frequently used git command set
