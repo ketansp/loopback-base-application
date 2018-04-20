@@ -1,9 +1,9 @@
-###Git Setup
+### Git Setup
 - Setup SSH Keys: https://help.github.com/articles/generating-ssh-keys/
 - Clone our repository : `git clone git@github.com:ketansp/loopback-base-application.git`
 
 
-###Git Guidelines
+### Git Guidelines
 - Keep logical commits and code formatting commits separate.
 - Proper commit message is a must.
 - Make your commits at most granular level. Make frequent commits with little code changes rather than seldom commits with huge code change.
@@ -16,7 +16,7 @@
 - Never force-push a branch to server
 
 
-###Frequently used git command set
+### Frequently used git command set
 Before starting work on a new feature, make sure to switch to `master` branch and pull the latest code. Create a new branch from it locally and push to server
 ```
 git checkout master
@@ -33,6 +33,11 @@ git diff
 To get latest code from master branch into your branch, rebase!
 ```
 git rebase master
+```
+
+You can also do a local merge from mastr branch to your feature branch. Make sure to never do this merge on server using a pull request.
+```
+git merge master
 ```
 
 To store uncommited changes locally, stash them
@@ -52,7 +57,3 @@ To push your changes to server
 ```
 git push origin feature-abc
 ```
-
-
-
-

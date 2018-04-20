@@ -12,12 +12,6 @@ brew install git
 brew install wget
 ```
 
-Make sure you have a .profile file to store your environment variables
-```
-touch ~/.profile
-```
-
-
 ### Install NVM and node version 8.9.0
 ```
 touch ~/.bash_profile
@@ -31,7 +25,9 @@ nvm alias default 8.9.0
 
 ### Install RVM and ruby
 ```
+touch ~/.bash_profile
 curl -sSL https://get.rvm.io | bash
+source ~/.bash_profile
 source ~/.rvm/scripts/rvm
 rvm install 2.1.5
 rvm use 2.1.5
@@ -46,17 +42,10 @@ gem install compass
 ```
 
 ### Install local dependencies from project directory
-```
-npm install
-```
-or
-```
-yarn install
-```
+```npm install``` or ```yarn install```
 
 ### Creating a local mysql database
 Install mysql server community edition (version 5.7.16 or higher) locally.
-Secure it by setting a password
 ```
 brew install mysql
 brew services start mysql
