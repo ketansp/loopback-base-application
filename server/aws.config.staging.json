@@ -1,0 +1,26 @@
+{
+  "accessKeyId" : "",
+  "secretAccessKey" : "",
+  "sqs" : {
+    "region" : "",
+    "queue" : {
+      "sms" : {
+        "url" : ""
+      },
+      "email" : {
+        "url" : ""
+      },
+      "pushNotification" : {
+        "url" : ""
+      }
+    }
+  },
+  "s3" : {
+    "buckets" : {
+      "documentBucket" : {
+        "name" : ""
+      }
+    }
+  }
+}
+
